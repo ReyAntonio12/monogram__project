@@ -1,0 +1,135 @@
+@media (max-width: 1180px) {
+    .build-shop__item{
+        flex-basis: calc(50% - 1rem);
+    }
+
+    .shop__item{
+        width: 25%;
+    }
+}
+
+@media (max-width: 990px) {
+    /* NAVIGATION MENU */
+    .header__nav{
+        display: block;
+        position: absolute;
+        max-width: 380px;
+        max-height: 524px;
+        width: 380px;
+        height: 524px;
+        top: 0;
+        left: -3%;
+        z-index: 11;
+        background-color: var(--color-primary);
+        transition: all 200ms ease;
+        margin-left: -100%;
+    }
+
+    .header__nav--visible{
+        margin-left: 0;
+        
+    }
+
+    .nav__list{
+        display: flex;
+        flex-direction: column;
+        align-content: space-around;
+        height: 100%;
+        flex-wrap: wrap;
+    }
+
+    .nav__submenu{
+        position: absolute;
+        opacity: 1;
+        z-index: 11;
+        padding: 0;
+        padding-left: 2rem;
+        background-color: var(--color-primary);
+    }
+
+    .nav-submenu__link{
+        color: var(--color-secondary);
+        padding-bottom: 1.2rem;
+    }
+
+    .header__menu{
+        display: block;
+    }
+
+    .menu__btn{
+        font-size: 3.5rem;
+        color: var(--color-title);
+        position: absolute;
+        right: 10%;
+        top: 20%;
+        transition: all 200ms;
+    }
+
+    .menu__btn--close{
+        opacity: 0;
+        top: 72%;
+        right: 63%;
+        z-index: 11;
+    }
+
+    /* FOOTER */
+    .footer{
+        display: grid;
+        grid-template-areas: "monogram form form"
+        "quick-links help information" ;  
+    }
+
+    .footer__addres{
+        grid-area: monogram;
+    }
+
+    .footer__quick-links{
+        grid-area: quick-links;
+    }
+
+    .footer__form{
+        grid-area: form;
+    }
+
+    .footer__help{
+        grid-area: help;
+    }
+
+    .footer__information{
+        grid-area: information;
+    }
+
+}
+
+@media (max-width: 890px){
+
+    .shop{
+        padding-left: 10rem;
+    }
+    .shop__item{
+        flex-basis: 100%;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+}
+
+@media (max-width: 790px){
+    .build-shop__item{
+        flex-basis: 100%;
+    }
+}
+
+@media (max-width: 570px) {
+    .footer{
+        display: grid;
+        grid-template-areas: "form form"
+        "monogram quick-links"
+        "help information" ;  
+    }
+
+    .copyright__text{
+        position: absolute;
+        bottom: 5%;
+    }
+}

@@ -73,6 +73,10 @@ body{
     transition: all 300ms ease-in-out;
 }
 
+.nav-item__icon{
+    display: none;
+}
+
 .nav__submenu{
     position: absolute;
     width: 19rem;
@@ -425,4 +429,10 @@ body{
 
 .copyright__text{
     color: var(--color-title);
+}
+
+/* Responsive Buttons */
+
+.header__menu {
+    display: none;
 }
